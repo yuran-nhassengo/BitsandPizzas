@@ -45,10 +45,43 @@
        android:layout_height="wrap_content"
       app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-         android:text="This is the order fragment"/>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:padding="16dp"
+         android:orientation="vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Wich type of pizza would you like?"/>
+
+         <RadioGroup
+             android:id="@+id/pizza_group"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_diavolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="Diavolo"/>
+
+            <RadioButton
+                android:id="@+id/radio_funghi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="Funghi"/>
+         </RadioGroup>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:text="Please choose any extras:"/>
+
+      </LinearLayout>
+
+
 
    </androidx.core.widget.NestedScrollView>
 
